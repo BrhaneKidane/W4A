@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*main section background styling*/
+.container{
+    background-color: aquamarine;
+}
+
+/*logo image styling*/
+#head{
+    background-color: blanchedalmond;
+}
+
+/*logo image styling*/
+#head img {
+    width: 30vw;
+    height: 30vh;
+    margin: 5px;
+}
+
+/*meet team styling*/
+.team{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5px;
+    padding: 10px;
+    text-align: center;
+
+}
+
+/*disappearing the paragraph of the meet team on mobile*/
+@media (max-width:600px){
+    .team p{
+        display: none;
+    }
+
+}
+
+/*mainproducts styling with flex*/
+.mainproducts{
+    display: flex;
+    flex-direction: column;
+
+}
+
+/*sub products styling*/
+.mainproducts .subproducts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/*footer styling*/
+footer {
+    background: #222;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footer-column {
+    margin-bottom: 20px;
+  }
+  
+  .footer-column a {
+    display: block;
+    margin: 5px 0;
+    color: white;
+    text-decoration: none;
+  }
+
+
+  /* Tablet View */
+  
+  @media (min-width: 1024px) {
+
+    .mainproducts .subproducts {
+      justify-content: center;
+      flex-direction: row;
+    }
+    .mainproducts .subproducts:nth-child(2) img {
+      order: 1;
+    }
+  
+    footer {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+  
+  
