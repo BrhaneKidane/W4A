@@ -20,6 +20,11 @@
     margin: 5px;
 }
 
+/*image styling of the meet team*/
+.team img{
+  border-radius: 48%;
+}
+
 /*meet team styling*/
 .team{
     display: grid;
